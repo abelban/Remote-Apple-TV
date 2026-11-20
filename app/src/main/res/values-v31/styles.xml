@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Remote" parent="Theme.RemoteBase">
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowSplashScreenBackground">#000000</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher</item>
+    </style>
+</resources>

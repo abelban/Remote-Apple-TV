@@ -1,0 +1,52 @@
+# Android and Gradle
+.gradle/
+.gradle-user-home/
+.kotlin/
+**/build/
+local.properties
+.externalNativeBuild/
+.cxx/
+captures/
+*.hprof
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local credentials and signing keys
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+keystore.properties
+
+# Local build and QA output; publish APKs through GitHub Releases
+*.apk
+*.aab
+*.apks
+/artifacts/
+tools/android-sdk/
+tools/avd/
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*~
