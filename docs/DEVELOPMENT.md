@@ -6,7 +6,7 @@
 
 | Инструмент | Версия |
 | :--- | :--- |
-| JDK для сборки | 21 |
+| JDK для сборки | 25 (выбран в `gradle/gradle-daemon-jvm.properties`) |
 | Python | 3.11 |
 | Android SDK Platform | 36.1 |
 | Gradle | 9.6.0, через wrapper |
@@ -38,7 +38,7 @@ app/
 └── wheels/                     # Pure-Python сборка zeroconf
 tests/                          # Тесты транспорта
 tools/                          # Симулятор и пересборка wheel
-docs/assets/                    # Обложка и скриншоты для README
+docs/assets/                    # Скриншоты для README
 docs/qa/                        # Итоговые отчёты QA
 ```
 
