@@ -10,12 +10,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0-202124?style=flat-square" alt="Версия 1.0">
+  <img src="https://img.shields.io/badge/version-1.0.1-202124?style=flat-square" alt="Версия 1.0.1">
   <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&amp;logo=android&amp;logoColor=white" alt="Android 8.0 и новее">
 </p>
 
 <p align="center">
-  <a href="APK/Remote-Apple-TV-1.0.apk?raw=true"><strong>Скачать APK · v1.0</strong></a>
+  <a href="APK/Remote-Apple-TV-1.0.1.apk?raw=true"><strong>Скачать APK · v1.0.1</strong></a>
   <br>
   <sub>ARM64 / x86_64 · Сборка с отладочной подписью</sub>
 </p>

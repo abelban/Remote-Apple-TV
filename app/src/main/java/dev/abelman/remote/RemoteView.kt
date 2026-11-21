@@ -192,7 +192,7 @@ class DeviceSelector(context: Context) : View(context) {
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val arrow = Path()
     private var edgeShader: Shader? = null
-    private val televisionBadge = requireNotNull(context.getDrawable(R.drawable.ic_apple_tv))
+    private val televisionIcon = requireNotNull(context.getDrawable(R.drawable.ic_tv))
     var label = "Выбрать TV"
         set(value) { field = value; invalidate() }
 
@@ -220,8 +220,8 @@ class DeviceSelector(context: Context) : View(context) {
         val textWidth = paint.measureText(text)
         val groupWidth = textWidth + 46f * unit
         val x = (width - groupWidth) / 2f
-        televisionBadge.setBounds(x.toInt(), (19.5f * unit).toInt(), (x + 16f * unit).toInt(), (35.5f * unit).toInt())
-        televisionBadge.draw(canvas)
+        televisionIcon.setBounds((x - 2f * unit).toInt(), (18f * unit).toInt(), (x + 18f * unit).toInt(), (38f * unit).toInt())
+        televisionIcon.draw(canvas)
         paint.style = Paint.Style.FILL
         paint.color = Color.WHITE
         paint.textSize = 17.5f * unit

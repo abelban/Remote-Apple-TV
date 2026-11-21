@@ -1,10 +1,8 @@
 package dev.abelman.remote
 
 import android.app.Application
-import android.content.ComponentName
 import android.os.Handler
 import android.os.Looper
-import android.service.quicksettings.TileService
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 import org.json.JSONObject
@@ -202,7 +200,6 @@ class RemoteRepository(private val context: Application) {
         store.activeId = selected?.id
         updateStatus(result)
         schedulePoll()
-        TileService.requestListeningState(context, ComponentName(context, RemoteTileService::class.java))
     }
 
     private fun updateStatus(result: JSONObject) {

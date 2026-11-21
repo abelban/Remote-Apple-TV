@@ -11,12 +11,13 @@ import android.service.quicksettings.TileService
 class RemoteTileService : TileService() {
     override fun onStartListening() {
         super.onStartListening()
-        val repository = (application as RemoteApplication).remote
         qsTile?.apply {
             label = getString(R.string.tile_name)
             icon = Icon.createWithResource(this@RemoteTileService, R.drawable.ic_remote)
-            state = if (repository.state == ConnectionState.CONNECTED) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-            if (Build.VERSION.SDK_INT >= 29) subtitle = repository.selected?.takeIf { it.credentials.isNotEmpty() }?.name ?: "Открыть пульт"
+            // This is a launch action, not a connection toggle. INACTIVE keeps
+            // it clickable without advertising a persistent enabled state.
+            state = Tile.STATE_INACTIVE
+            if (Build.VERSION.SDK_INT >= 29) subtitle = getString(R.string.tile_open_remote)
             contentDescription = "Открыть пульт Apple TV"
             updateTile()
         }

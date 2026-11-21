@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Пульт</string>
     <string name="tile_name">Пульт Apple TV</string>
+    <string name="tile_open_remote">Открыть пульт</string>
 </resources>
