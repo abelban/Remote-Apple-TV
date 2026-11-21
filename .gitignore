@@ -37,7 +37,7 @@ keystore.properties
 
 # Local build output; keep the downloadable app in APK/
 *.apk
-!/APK/Remote-Apple-TV-1.0.apk
+!/APK/Remote-Apple-TV-*.apk
 *.aab
 *.apks
 /artifacts/

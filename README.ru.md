@@ -17,7 +17,7 @@
 <p align="center">
   <a href="APK/Remote-Apple-TV-1.0.1.apk?raw=true"><strong>Скачать APK · v1.0.1</strong></a>
   <br>
-  <sub>ARM64 / x86_64 · Сборка с отладочной подписью</sub>
+  <sub>43 МиБ · ARM64 / x86_64 · Сборка с отладочной подписью · <a href="APK/SHA256SUMS">SHA-256</a></sub>
 </p>
 
 <p align="center">
